@@ -2,9 +2,9 @@ library(data.table)
 library(tidyverse)
 library(ggthemes)
 library(gridExtra)
-rm(list =ls())
 
-x <- fread("F:/NBA_20190720/Excel/NBAatlantic/playbyplay_TOR_GSW_3.csv")
+
+x <- fread(":./data/pbp_TOR_GSW_3.csv")
 
 calculate_streak_and_margin <- function(table, away, home) {
   table1 <- table[, .(PERIOD, PCTIMESTRING, SCORE, PLAYER1_TEAM_ABBREVIATION)]
