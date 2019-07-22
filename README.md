@@ -106,4 +106,4 @@ table1 <- table1[, c("min", "sec") := tstrsplit(PCTIMESTRING, ":", fixed = TRUE)
 
 ### Результат
 
-![](.calculate_streak_and_margin.R)
+![](calculate_streak_and_margin.R)
